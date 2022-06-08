@@ -1,23 +1,24 @@
-Матийко Святослав 
+# Матийко Святослав 
 
 # Fst day
 
--DIM_AUTO
+- DIM_AUTO
 ![](/images/car_1.png?raw=true)
 
--DIM_MANAGER
+- DIM_MANAGER
 ![](/images/manager_1.png?raw=true)
 
--DIM_CLIENT
+- DIM_CLIENT
 ![](/images/client_1.png?raw=true)
 
--DIM_DATE
-![](/images/date_1.png?raw=true)
+- DIM_DATE 
+  
+  ![](/images/date_1.png?raw=true)
 
--DIM_STORAGE
+- DIM_STORAGE
 ![](/images/storage_1.png?raw=true)
 
--DIM_SHOW_ROOM
+- DIM_SHOW_ROOM
 ![](/images/show_1.png?raw=true)
 
 ---
@@ -32,8 +33,9 @@
 - DIM_CLIENT
 ![](/images/client_2.png?raw=true)
 
-- DIM_DATE
-![](/images/date_2.png?raw=true)
+- DIM_DATE 
+
+  ![](/images/date_2.png?raw=true)
 
 - DIM_STORAGE
 ![](/images/storage_2.png?raw=true)
@@ -55,7 +57,8 @@
 ![](/images/client_3.png?raw=true)
 
 - DIM_DATE
-![](/images/date_3.png?raw=true)
+
+  ![](/images/date_3.png?raw=true)
 
 - DIM_STORAGE
 ![](/images/storage_3.png?raw=true)
