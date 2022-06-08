@@ -1,0 +1,111 @@
+-- DIM CAR
+-- day 2
+
+-- UPDATE Nissan
+UPDATE DIM_CAR	
+SET MODEL = 'Titan'
+WHERE VIN_CODE = '6NI3209N3984HS';
+
+
+-- UPDATE PEUGEOT
+UPDATE DIM_CAR	
+SET MODEL = 'Partner'
+WHERE VIN_CODE = '5PE4212P9384FH';
+
+
+-- UPDATE Toyota
+UPDATE DIM_CAR	
+SET ISSUE_YEAR = '2020-10-07'
+WHERE VIN_CODE = '4TO3212N9384GH';
+
+
+------------------------------------------------------------------------
+-- DIM MANAGER
+-- day 2
+-- UPDATE Ira
+UPDATE DIM_MANAGER	
+SET DEPT = 'D00'
+WHERE EMP_CODE = 'AB2';
+
+-- UPDATE Michael
+UPDATE DIM_MANAGER 	
+SET DEPT = 'A02'
+WHERE EMP_CODE = 'AA2';
+
+-- UPDATE Ilya
+UPDATE DIM_MANAGER	
+SET DEPT = 'C10'
+WHERE EMP_CODE = 'AA1';
+
+
+------------------------------------------------------------------------
+-- DIM CLIENT
+-- day 2
+INSERT INTO DIM_CLIENT (PASS_CODE, FIRSTNAME, LASTNAME, BIRTHDAY, TEL, CITY, EMAIL, FROM_DATE)
+VALUES
+('AA4', 'Vlad', 'Kovolev', '1986-04-12', '+375 11 000 11 22', 'Grodno', 'vladkol@mail.com', '2021-06-15');
+
+-- UPDATE Olya
+UPDATE DIM_CLIENT 
+SET TEL = '+375 11 111 11 10'
+WHERE PASS_CODE = 'AA3';
+
+-- UPDATE Vlad
+UPDATE DIM_CLIENT 
+SET LASTNAME = '+80 29 165 44 89'
+WHERE PASS_CODE = 'AA4';
+
+
+------------------------------------------------------------------------
+-- DIM STORAGE
+-- day 2
+UPDATE DIM_STORAGE 
+SET PARKING_LOT_COUNT = 125
+WHERE STORAGE_ID = 1;
+
+UPDATE DIM_STORAGE 
+SET AREA = 300
+WHERE STORAGE_ID = 2;
+
+INSERT INTO DIM_STORAGE (CITY, STREET, BUILDING, TEL, PARKING_LOT_COUNT, AREA)
+VALUES
+('Gomel', 'Str num five', '12', '+375 22 333 44 55', 191, 430);
+
+UPDATE DIM_STORAGE 
+SET STREET = 'Str num six'
+WHERE STORAGE_ID = 4;
+
+
+------------------------------------------------------------------------
+-- DIM DATE
+-- day 2
+INSERT INTO DIM_DATE (MONTH, DAY_OF_WEEK, QUARTER, WEEK_OF_YEAR, IS_HOL)
+VALUES
+(1, 5, 1, 4, TRUE);
+
+INSERT INTO DIM_DATE (MONTH, DAY_OF_WEEK, QUARTER, WEEK_OF_YEAR, IS_HOL)
+VALUES
+(9, 6, 3, 34, FALSE);
+
+
+------------------------------------------------------------------------
+-- DIM SHOW ROOM
+-- day 2
+INSERT INTO DIM_SHOW_ROOM (SHOW_ROOM_NAME, CITY, STREET, BUILDING, CURRENT_TEL)
+VALUES
+('ROOM3', 'Vitebsk', 'Str num three', '1', '+375 00 000 00 01');
+
+INSERT INTO DIM_SHOW_ROOM (SHOW_ROOM_NAME, CITY, STREET, BUILDING, CURRENT_TEL)
+VALUES
+('ROOM4', 'Minsk', 'Str num ten', '10', '+375 10 101 10 10');
+
+
+-- UPDATE ROOM1 
+UPDATE DIM_SHOW_ROOM	
+SET CURRENT_TEL = '+375 10 000 00 00'
+WHERE SHOW_ROOM_NAME = 'ROOM1';
+
+-- UPDATE ROOM3
+UPDATE DIM_SHOW_ROOM	
+SET CURRENT_TEL = '+375 00 000 00 11'
+WHERE SHOW_ROOM_NAME = 'ROOM3';
